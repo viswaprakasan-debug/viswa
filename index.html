@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -57,7 +57,7 @@
 
         display: flex;
         gap: 10px;
-        background:#41bcec;
+        background: #41bcec;
 
         padding: 8px;
 
@@ -215,59 +215,68 @@
         color: #007bff;
         background: transparent;
     }
-    
-
-.info-container{
-    width:700px;
-    display:flex;
-    flex-direction:column;
-    gap:30px;
-    margin-left:135px;   
-    margin-top:30px;
-}
 
 
-/* Card */
+    .info-container {
+        width: 700px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-left: 135px;
+        margin-top: 30px;
+    }
 
-.info-box{
-    color:#fff;
-    display:flex;
-    align-items:center;
-    gap:25px;
-    background:#4d8ce9;
-    border:1px solid #f5f1f1;
-    border-radius:18px;
-    padding:28px 30px;
-    transition:.3s;
-}
 
-.info-box:hover{
-    transform:translateY(-5px);
-    border-color:#08b9e0;
-}
+    /* Card */
 
-/* Icon */
+    .info-box {
+        color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        background: #398ee4;
+        border: 3px solid #f5f1f1;
+        border-radius: 15px;
+        padding: 28px 30px;
+        transition: .3s;
+        overflow: hidden;
+    }
 
-.info-box i{
-    font-size:34px;
-    color:#00cfff;
-    min-width:45px;
-}
+    .info-box:hover {
+        transform: translateY(-5px);
+        border-color: #f0f3f3;
+        box-shadow: 2 8px 24px rgba(0, 0, 0, .08);
+    }
 
-/* Text */
+    .image-right {
+        width: 35%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
 
-.text h3{
-    
-    font-size:25px;
-    margin-bottom:10px;
+    /* Icon */
 
-}
+    .info-box i {
+        font-size: 34px;
+        color: #00cfff;
+        min-width: 45px;
+    }
 
-.text p{
-    color:#1a0202;
-    font-size:18px;
-    line-height:30px;
-}
+    /* Text */
+
+    .text h3 {
+
+        font-size: 25px;
+        margin-bottom: 10px;
+
+    }
+
+    .text p {
+        color: #1a0202;
+        font-size: 18px;
+        line-height: 30px;
+    }
 
 
     .right {
@@ -278,8 +287,8 @@
 
     .image-box {
         width: 320px;
-        height: 320px;
-        border-radius: 20%;
+        height: 380px;
+        border-radius: 10%;
         overflow: hidden;
         border: 6px solid #007bff;
     }
@@ -287,7 +296,7 @@
     .image-box img {
         width: 100%;
         height: 100%;
-        object-fit:cover;
+        object-fit: cover;
     }
 
     .left-card {
@@ -416,7 +425,7 @@
     .info-card {
         background: #fff;
         padding: 25px;
-        border-radius: 8px;
+        border-radius: 10px;
         display: flex;
         align-items: center;
         gap: 18px;
@@ -579,28 +588,28 @@
 </style>
 
 <body>
-<header class="header-container">
+    <header class="header-container">
 
-    <div class="logo">
-        Portfolio
-    </div>
+        <div class="logo">
+            Portfolio
+        </div>
 
-    <nav class="navbar">
+        <nav class="navbar">
 
-        <a href="#nav">Home</a>
-        <a href="#about">About</a>
-        <a href="#Skills & Expertise">Skills</a>
-        <a href="#">Services</a>
-        <a href="#education">Education</a>
-        <a href="#contacts">Contact</a>
+            <a href="#nav">Home</a>
+            <a href="#about">About</a>
+            <a href="#Skills & Expertise">Skills</a>
+            <a href="#">Services</a>
+            <a href="#education">Education</a>
+            <a href="#contacts">Contact</a>
 
-    </nav>
+        </nav>
 
-    <button class="btn">
-        Let's Talk
-    </button>
+        <button class="btn">
+            Let's Talk
+        </button>
 
-</header>
+    </header>
 
 
     <section class="hero" id="about">
@@ -623,17 +632,12 @@
             </div>
 
             <p class="about" id="nav">
-                <strong>Frontend Development:</strong> Writing clean React code to build responsive and intuitive user
-                interfaces.
-                <br>
-                <strong>Backend Development:</strong> Building RESTful APIs using Node.js and Express to handle
-                communication between the frontend and the database.
-                <br>
-                <strong>Database Management:</strong> Designing MongoDB schemas, ensuring efficient data storage, and
+                Writing clean React code to build responsive and intuitive user
+                interfaces. Building RESTful APIs using Node. js and Express to 
+                handle communication between the frontend and the database. 
+                Designing MongoDB schemas, ensuring efficient data storage, and
                 optimizing read/write operations.
-                <br>
-                <strong>System Integration:</strong> Connecting client-side components with server-side logic to ensure
-                smooth user experiences.
+
             </p>
 
             <div class="stats">
@@ -657,7 +661,8 @@
 
             <div class="buttons">
 
-                <a href="https://www.linkedin.com/in/your-linkedin-username" target="_blank" rel="noopener noreferrer" class="hire-btn">
+                <a href="https://www.linkedin.com/in/viswa-prakasan-v-87ab34383/" target="_blank"
+                    rel="noopener noreferrer" class="hire-btn">
                     Hire Me
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
@@ -670,55 +675,68 @@
             </div>
 
         </div>
-        
+
 
         <div class="right">
 
             <div class="image-box">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDYWQnPsz1l2HG9NmkWENcC2LVZyVFmMpVGS16OpCg5w&s=10"
-                    alt="Profile image">
+                <img src="assets/WhatsApp Image 2026-02-12 at 9.09.35 PM.jpeg" alt="Profile image">
             </div>
 
         </div>
 
     </section>
 
-<section class="about" id="education">
+    <section class="about" id="education">
 
-    <div class="info-container">
+        <div class="info-container">
 
-        <div class="info-box">
-            <i class="fas fa-graduation-cap"></i>
+            <div class="info-box">
 
-            <div class="text">
-                <h3>Education</h3>
-                <p>B.Tech Information Technology</p>
-                <p>The American College, Madurai</p>
+                <i class="fas fa-graduation-cap"></i>
+
+                <div class="text">
+                    <div class="icon">🎓</div>
+                    <h3>Education</h3>
+                    <p>B.Tech Information Technology</p>
+                    <p>The American College, Madurai</p>
+                </div>
             </div>
+
+            <div class="info-box">
+                <i class="fas fa-location-dot"></i>
+
+                <div class="text">
+                    <div class="icon">📍</div>
+                    <h3>Location</h3>
+                    <p>Thallakulam, Madurai,</p>
+                    <p>Tamil Nadu, India</p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <i class="fas fa-briefcase"></i>
+
+                <div class="text">
+                    <div class="icon">💻</div>
+                    <h3>Experience</h3>
+                    <p>FRESHER - Web Development</p>
+                </div>
+            </div>
+
         </div>
 
-        <div class="info-box">
-            <i class="fas fa-location-dot"></i>
+    </section>
+    <section class="image-right">
+        <div class="right">
 
-            <div class="text">
-                <h3>Location</h3>
-                <p>Thallakulam, Madurai,</p>
-                <p>Tamil Nadu, India</p>
+            <div class="image-box">
+                <img src="assets/WhatsApp Image 2026-02-12 at 9.09.35 PM.jpeg" alt="Profile image">
             </div>
+
         </div>
 
-        <div class="info-box">
-            <i class="fas fa-briefcase"></i>
-
-            <div class="text">
-                <h3>Experience</h3>
-                <p>FRESHER - Web Development</p>
-            </div>
-        </div>
-
-    </div>
-
-</section>
+    </section>
 
     <section class="skills-section" id="Skills & Expertise">
 
@@ -807,7 +825,7 @@
                 <div class="info-text">
                     <h3>Email</h3>
                     <p>viswaprakasan@gmail.com</p>
-                   <a href="mailto:viswaprakasan@gmail.com?subject=Contact%20Request">Send Email</a>
+                    <a href="mailto:viswaprakasan@gmail.com?subject=Contact%20Request">Send Email</a>
                 </div>
             </div>
 
@@ -816,16 +834,16 @@
                 <div class="info-text">
                     <h3>Phone</h3>
                     <p>+91 8015730107</p>
-                   <a href="tel:+918015730107">Call Now</a>
+                    <a href="tel:+918015730107">Call Now</a>
                 </div>
             </div>
 
             <div class="info-card">
-                <div class="icon-box">☏</div>
+                <div class="icon-box">☎</div>
                 <div class="info-text">
                     <h3>WhatsApp</h3>
                     <p>+91 8015730107</p>
-                   <a href="https://wa.me/918015730107" target="_blank" rel="noopener">Send Message</a>
+                    <a href="https://wa.me/918015730107" target="_blank" rel="noopener">Send Message</a>
                 </div>
             </div>
 
@@ -854,7 +872,7 @@
             </div>
 
             <button type="submit" class="send-btn">
-                Send Message <span>➤</span>
+                Send Message <span>âž¤</span>
             </button>
 
         </form>
