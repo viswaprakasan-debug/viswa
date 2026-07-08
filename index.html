@@ -14,8 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <style>
@@ -32,7 +31,6 @@
         color: white;
 
     }
-
 
 
     header {
@@ -753,7 +751,7 @@
 </style>
 
 <body>
-    <header class="header-container">
+    <header class="header-container ">
 
         <nav class="navbar">
 
@@ -786,7 +784,7 @@
     </script>
 
 
-    <section class="hero" id="about">
+    <section class="hero " id="about">
 
         <div class="left">
 
@@ -814,7 +812,7 @@
 
             </p>
 
-            <div class="stats">
+            <div class="stats" data-aos="fade-right">
 
                 <div class="card">
                     <h2>03+</h2>
@@ -833,7 +831,7 @@
 
             </div>
 
-            <div class="buttons">
+            <div class="buttons" data-aos="zoom-in-right">
 
                 <a href="https://www.linkedin.com/in/viswa-prakasan-v-87ab34383/" target="_blank"
                     rel="noopener noreferrer" class="hire-btn">
@@ -853,7 +851,7 @@
 
         <div class="right">
 
-            <div class="image-box">
+            <div class="image-box" data-aos="fade-left">
                 <img src="assets/WhatsApp Image 2026-02-12 at 9.09.35 PM.jpeg" alt="Profile image">
             </div>
 
@@ -866,11 +864,11 @@
         <h1 style="font-size:40px; color:#111; margin-bottom:12px;">Education & Info</h1>
         <div class="line"></div>
 
-        <div class="info-container">
+        <div class="info-container" data-aos="fade-up">
 
-            <div class="info-box">
+            <div class="info-box"  data-aos="fade-right">
 
-                <i class="fas fa-graduation-cap"></i>
+                <i class="fas fa-graduation-cap" ></i>
 
                 <div class="text">
                     <div class="icon">🎓</div>
@@ -880,7 +878,7 @@
                 </div>
             </div>
 
-            <div class="info-box">
+            <div class="info-box"  data-aos="flip-up">
                 <i class="fas fa-location-dot"></i>
 
                 <div class="text">
@@ -891,7 +889,7 @@
                 </div>
             </div>
 
-            <div class="info-box">
+            <div class="info-box" data-aos="fade-left">
                 <i class="fas fa-briefcase"></i>
 
                 <div class="text">
@@ -905,12 +903,12 @@
 
     </section>
 
-    <section class="skills-section" id="Skills & Expertise">
+    <section class="skills-section"  id="Skills & Expertise">
 
         <h1>Skills & Expertise</h1>
         <div class="line"></div>
 
-        <div class="skills-container">
+        <div class="skills-container" data-aos="fade-up-right">
 
             <div class="box">
                 <h2>Skills</h2>
@@ -956,7 +954,7 @@
                 </div>
             </div>
 
-            <div class="box">
+            <div class="box" data-aos="fade-up-left">
                 <h2>Version Control / Collaboration Tools</h2>
 
                 <div class="skill">
@@ -985,9 +983,9 @@
     </section>
     <section class="contact-section">
 
-        <div class="contact-info">
+        <div class="contact-info"  data-aos="fade-up">
 
-            <div class="info-card">
+            <div class="info-card"  data-aos="zoom-in">
                 <div class="icon-box">✉</div>
                 <div class="info-text">
                     <h3>Email</h3>
@@ -996,7 +994,7 @@
                 </div>
             </div>
 
-            <div class="info-card">
+            <div class="info-card"  data-aos="flip-down">
                 <div class="icon-box">☎</div>
                 <div class="info-text">
                     <h3>Phone</h3>
@@ -1015,58 +1013,64 @@
             </div>
 
         </div>
-<form class="contact-form" id="contacts">
+        <form class="contact-form" data-aos="zoom-out-left"  id="contacts">
 
-    <div class="input-group">
-        <label for="name">Name</label>
-        <input id="name" type="text" placeholder="Enter your name" required>
-    </div>
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input id="name" type="text" placeholder="Enter your name" required>
+            </div>
 
-    <div class="input-group">
-        <label for="email">Email</label>
-        <input id="email" type="email" placeholder="Enter your email" required>
-    </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Enter your email" required>
+            </div>
 
-    <div class="input-group">
-        <label for="tel">Phone Number</label>
-        <input id="tel" type="tel" placeholder="Enter number" required>
-    </div>
+            <div class="input-group">
+                <label for="tel">Phone Number</label>
+                <input id="tel" type="tel" placeholder="Enter number" required>
+            </div>
 
-    <div class="input-group">
-        <label for="message">Message</label>
-        <textarea id="message" placeholder="Write your message" required></textarea>
-    </div>
+            <div class="input-group">
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Write your message" required></textarea>
+            </div>
 
-    <button type="submit" class="send-btn">
-        Send Message 📩
-    </button>
+            <button type="submit" class="send-btn">
+                Send Message 📩
+            </button>
 
-</form>
-<script>
-document.getElementById("contacts").addEventListener("submit", function(e) {
+        </form>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+              AOS.init({
+        duration: 1000,
+    });
+    
+ 
+            document.getElementById("contacts").addEventListener("submit", function (e) {
 
-    e.preventDefault();
+                e.preventDefault();
 
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const phone = document.getElementById("tel").value;
-    const message = document.getElementById("message").value;
+                const name = document.getElementById("name").value;
+                const email = document.getElementById("email").value;
+                const phone = document.getElementById("tel").value;
+                const message = document.getElementById("message").value;
 
-    const wpmessage = `*Contact Form*
+                const wpmessage = `*Contact Form*
 
 *Name:* ${name}
 *Email:* ${email}
 *Phone:* ${phone}
 *Message:* ${message}`;
 
-    const contactNo = "918015730107";
+                const contactNo = "918015730107";
 
-    const url = `https://wa.me/${contactNo}?text=${encodeURIComponent(wpmessage)}`;
+                const url = `https://wa.me/${contactNo}?text=${encodeURIComponent(wpmessage)}`;
 
-    window.open(url, "_blank");
+                window.open(url, "_blank");
 
-});
-</script>
+            });
+        </script>
 </body>
 
 </html>
