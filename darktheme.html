@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --bglight: rgb(255, 255, 255);
+            --bgdark:black;
+            
+        }
+        body{
+            background-color: var(--bglight);
+            color:black;
+        }
+        
+        .dark{
+            background-color: var(--bgdark);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="theme">
+    <label>dark theme</label>
+
+    <h1>theme</h1>
+    <script>
+        const theme= document.getElementById("theme");
+
+        theme.addEventListener("change", function() {
+            document.body.classList.toggle("dark");
+        })
+
+    </script>
+
+</body>
+</html>
