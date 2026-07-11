@@ -26,9 +26,20 @@
     }
 
     :root {
-        --nav-color: rgb(12, 63, 87);
+        --nav-color: rgb(53, 162, 212);
         --bglight: #ffffff;
-        --bgdark: black;
+        --textlight: #007bff;
+        --logo-color: #1d0b24;
+        --education-color: black; 
+        --skills-color: #111;
+        --title-color:  #333;
+        --info-color: #111;
+        --boxh2-color: #111111;
+        --inputlabel-color: #333;
+        --lefth1-color: #111;
+        --hello-color:#111;
+        --lefth2-color: #333;
+        --navul-color: white;
 
     }
 
@@ -38,8 +49,23 @@
     }
 
     .dark {
-        background-color: var(--bgdark);
-        color: rgb(255, 255, 255);
+        --logo-color:white;
+         --nav-color:black;
+        --bglight: #000;
+        --textlight: #1d2657;
+        color: white;
+        --textlight: #3fddc8;
+        --education-color:rgb(22, 121, 124);
+        --skills-color:rgb(30, 95, 104);
+        --title-color:white;
+        --info-color:rgb(19, 145, 161);
+        --boxh2-color:rgb(33, 95, 124);
+        --inputlabel-color:rgb(22, 180, 159);
+        --lefth1-color:white;
+        --hello-color:rgb(22, 180, 159);
+        --lefth2-color:rgb(55, 102, 96);
+         --navul-color: rgb(86, 202, 218);
+
     }
 
     header {
@@ -52,7 +78,7 @@
 
     .logo {
 
-        color: #1d0b24;
+        color:var(--logo-color);
         font-size: 26px;
         font-weight: 500;
     }
@@ -63,7 +89,7 @@
         justify-content: center;
         align-items: center;
         gap: 30px;
-        background-color: rgb(53, 162, 212);
+        background-color: var(--nav-color);
         padding: 10px;
 
     }
@@ -81,7 +107,7 @@
     }
 
     .navbar ul li a {
-        color: white;
+        color: var(--navul-color);
         text-decoration: none;
         font-size: 18px;
     }
@@ -99,6 +125,49 @@
         font-size: 24px;
     }
 
+
+    .checkbox {
+        display: none;
+    }
+
+    .slider {
+        width: 60px;
+        height: 30px;
+        background-color: lightgray;
+        border-radius: 20px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        border: 4px solid transparent;
+        transition: .3s;
+        box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.25) inset;
+        cursor: pointer;
+    }
+
+    .slider::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        transform: translateX(-30px);
+        border-radius: 20px;
+        transition: .3s;
+        box-shadow: 0 0 10px 3px rgb(0, 0, 0, 0.25);
+    }
+
+    .checkbox:checked~.slider::before {
+        transform: translateX(30px);
+        box-shadow: 0 0 10px 3px rgb(0, 0, 0, 0.25);
+    }
+
+    .checkbox:checked~.slider {
+        background-color: #2196F3;
+    }
+
+    .checkbox:active~.slider::before {
+        transform: translate(0);
+    }
 
     .hero {
         min-height: 100vh;
@@ -118,24 +187,24 @@
     .hello {
         font-size: 20px;
         margin-bottom: 15px;
-        color: #333;
+        color: var(--hello-color);
     }
 
     .left h1 {
         font-size: 48px;
         margin-bottom: 10px;
-        color: #111;
+        color: var(--lefth1-color);
     }
 
     .left h1 span {
-        color: #007bff;
+        color: var(--textlight);
         text-transform: capitalize;
     }
 
     .left h2 {
         font-size: 28px;
         margin-bottom: 25px;
-        color: #333;
+        color: var(--lefth2-color);
     }
 
     .about {
@@ -206,11 +275,14 @@
         flex-direction: column;
         gap: 22px;
         margin: 30px auto 0;
-       
+
     }
-     .education{
+
+    .education {
+        height: auto;
+       
         /* background:#752b2b;   */
-     }
+    }
 
     .info-box {
         position: relative;
@@ -228,6 +300,7 @@
         box-shadow: 0 4px 18px rgba(0, 0, 0, .05);
         text-align: left;
     }
+
     .info-box:hover {
         transform: translateY(-6px);
         box-shadow: 0 14px 30px rgba(0, 123, 255, .15);
@@ -352,7 +425,7 @@
 
     .skills-section h1 {
         font-size: 40px;
-        color: #111;
+        color:var(--skills-color);
         margin-bottom: 12px;
     }
 
@@ -385,7 +458,7 @@
 
     .box h2 {
         font-size: 24px;
-        color: #111111;
+        color: var(--boxh2-color);
         margin-bottom: 25px;
     }
 
@@ -398,7 +471,7 @@
         justify-content: space-between;
         gap: 15px;
         font-size: 16px;
-        color: #333;
+        color: var(--title-color);
         margin-bottom: 8px;
     }
 
@@ -466,7 +539,7 @@
 
     .info-text h3 {
         font-size: 20px;
-        color: #111;
+        color: var(--info-color);
         margin-bottom: 6px;
     }
 
@@ -496,7 +569,7 @@
     .input-group label {
         display: block;
         margin-bottom: 8px;
-        color: #333;
+        color: var(--inputlabel-color);
         font-weight: 600;
     }
 
@@ -761,7 +834,7 @@
 </style>
 
 <body>
-   
+
     <header class="header-container ">
 
         <nav class="navbar">
@@ -780,8 +853,11 @@
             <div class="nav-btn">
                 <i class="fa-solid fa-bars"></i>
             </div>
-    <input type="checkbox" id="theme">
-    <label>dark theme</label>
+
+            <label class="switch">
+                <input type="checkbox" id="theme-toggle" class="checkbox">
+                <div class="slider"></div>
+            </label>
         </nav>
 
     </header>
@@ -873,7 +949,7 @@
 
     <section id="education" style="width:100%; padding:80px 10%; text-align:center;">
 
-        <h1 style="font-size:40px; color:#111; margin-bottom:12px;">Education & Info</h1>
+        <h1 style="font-size:40px; color:var(--education-color); margin-bottom:12px;">Education & Info</h1>
         <div class="line"></div>
 
         <div class="info-container" data-aos="fade-up">
@@ -1083,15 +1159,31 @@
 
             });
         </script>
-         <script>
-            const theme = document.getElementById("theme");
 
-            theme.addEventListener("change", function () {
-                document.body.classList.toggle("dark");
-            })
 
+        <script>
+            const themeToggle = document.getElementById("theme-toggle");
+
+            // Load saved theme
+            if (localStorage.getItem("theme") === "dark") {
+                document.body.classList.add("dark");
+                themeToggle.checked = true;
+            }
+
+            // Toggle theme
+            themeToggle.addEventListener("change", function () {
+
+                if (this.checked) {
+                    document.body.classList.add("dark");
+                    localStorage.setItem("theme", "dark");
+                } else {
+                    document.body.classList.remove("dark");
+                    localStorage.setItem("theme", "light");
+                }
+
+            });
         </script>
-       
+
 </body>
 
 </html>
